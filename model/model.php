@@ -108,6 +108,11 @@ class Model
     {
         return $this->selectFrom("tbl_teachermonitoring_attencance", "teacher_id = '" . $teacher_id . "'");
     }
+    
+    public function MOD_GET_ALL_ATTENDANCE()
+    {
+        return $this->selectAll("tbl_teachermonitoring_attencance");
+    }
 
     public function MOD_GET_ATTENDANCE_TODAY($teacher_id, $date_today)
     {
